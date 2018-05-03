@@ -11,6 +11,6 @@ services:
       context: .
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${DATA_TERRAFORM}:/data                            # volume for data
+      - ./data/terraform:/data                             # volume for data
     environment:
       - TERRAFORM_VERSION=0.10.5

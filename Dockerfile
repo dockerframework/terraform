@@ -1,5 +1,5 @@
 ARG TERRAFORM_VERSION=0.10.5
-FROM dockerframework/core-base:latest
+FROM dockerframework/core-base-consul:latest
 
 # ================================================================================================
 #  Inspiration: Docker Alpine (https://github.com/bhuisgen/docker-alpine)
