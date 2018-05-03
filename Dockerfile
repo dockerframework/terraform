@@ -1,4 +1,3 @@
-ARG TERRAFORM_VERSION=0.10.5
 FROM dockerframework/core-base:latest
 
 # ================================================================================================
@@ -22,7 +21,7 @@ FROM dockerframework/core-base:latest
 
 MAINTAINER "Laradock Team <mahmoud@zalt.me>"
 
-ENV TERRAFORM_VERSION=${TERRAFORM_VERSION}
+ENV TERRAFORM_VERSION=0.11.7
 
 RUN curl -sSL https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform.zip && \
     unzip /tmp/terraform.zip -d /usr/bin && \
